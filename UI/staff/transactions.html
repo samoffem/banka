@@ -7,41 +7,58 @@
 </head>
 <body>
     <div class="container">
-        <div class="select-element">
-            <label>Transaction Type</label>
-            <select class="transaction-type">
-                <option>Choose</option>
-                <option value="credit">Credit</option>
-                <option value="debit">Debit</option>
-            </select>
-        </div>
-        <div class="account-number">
-            <label>Account Number:</label>
-            <input type="text" required>
-        </div>
-        <div class="account-name">
-            <label>Account Name</label>
-            <input type="text" required>
-        </div>
-        <div class="amount">
-            <label>Amount:</label>
-            <input type="text" required>
-        </div>
-        <div class="cashier">
+
+        <section class="verify">
             <div>
-                <label>Cashier ID</label>
+                Perform a Credit/Debit Transaction
+            </div>
+
+            <div class="account-number">
+                <label>Account Number:</label>
                 <input type="text" required>
             </div>
-            <div>
-                <label>Password:</label>
-                <input type="password" required>
+            <div class="account-name">
+                <label>Account Name</label>
+                <input type="text" required>
             </div>
+            <button class="verify-btn">Verify Customer</button>
+        </section>
 
+        <div class="perform">
+            <div>Account ID: <span>%ID%</span></div>
+            <div>Account Name: <span>%Name%</span></div>
+            <div>Available balance: <span>%Amount%</span></div>
+            <div class="image"><img src="#"></div>
+            <div class="select-element">
+                <label>Transaction Type</label>
+                <select class="transaction-type">
+                    <option>Choose</option>
+                    <option value="credit">Credit</option>
+                    <option value="debit">Debit</option>
+                </select>
+            </div>
+            <section>
+                <div class="amount">
+                    <label>Amount:</label>
+                    <input type="text" required>
+                </div>
+                <div class="cashier">
+                    <div>
+                        <label>Cashier ID</label>
+                        <input type="text" required>
+                    </div>
+                    <div>
+                        <label>Password:</label>
+                        <input type="password" required>
+                    </div>
+
+
+                </div>
+                <button>Perform</button>
+            </section>
 
         </div>
-        <button>Perform</button>
-
-
     </div>
+    <script src="transactions.js"></script>
 </body>
 </html>

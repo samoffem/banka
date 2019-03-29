@@ -7,31 +7,39 @@ body{
 }
 .container{
     width: 600px;
-    height: 650px;
-    border: 1px solid black;
+    height: auto;
+    border: 2px solid #c9f8be;
     display: inline-block;
     margin-top: 100px;
     text-align: left;
+    background-color: #FFFFFF;
 }
-.container >div {
+.container>.perform{
+    display: none;
+}
+.container >.verify>div, .container>.perform>section>div,
+.container>.perform>section>div>div {
     margin-bottom: 20px;
     margin-left: 50px;
-    overflow-clip: hidden;
 }
-.cashier > div{
-    margin-bottom: 20px;
+.container>.perform>section>div>div{
+    width:100%;
+    margin-left: 0;
+}
+.container>.perform>div{
+    margin-left: 50px;
 }
 input[type="text"],
 input[type="password"] {
     width:90%;
     height: 40px;
     display: block;
+    background-color: #def8dc;
+    border: none;
+    padding: 5px;
 }
 input:focus{
-    border: 2px solid #5fcf80;
-}
-.select-element {
-    margin-top: 20px;
+    border: 2px solid #9fcf91;
 }
 button{
     width:150px;
@@ -43,10 +51,31 @@ button{
     border-radius: 5px;
     font-size: 15px;
     cursor: pointer;
-    margin-left: 200px;
-    margin-top: 40px;
+    margin: 10px 0 20px 200px;
 
 }
 button:focus {
     outline: none;
+}
+button:active {
+    padding: 15px;
+}
+
+.image {
+    width: 70px;
+    height: 70px;
+    border-radius: 55px;
+    background-color: grey;
+    overflow: hidden;
+    position: absolute;
+    top: 110px;
+    right: 500px;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.verify {
+    margin-top: 20px;
 }

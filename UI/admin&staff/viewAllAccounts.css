@@ -4,26 +4,27 @@
 }
 body {
     height: 600px;
-    justify-content: center;
-    display: flex;
 
 }
 
 .container{
     height: 100%;
-    margin: 40px 0 0 0;
     padding: 0;
     display: flex;
     flex-flow: row wrap;
 }
 .accounts-list{
-    width: 700px;
+    width: 45%;
     height: 100%;
     border: 1px solid black;
 }
 .customer-details{
-    width: 500px;
+    width: 45%;
     border: 1px solid black;
+    display: none;
+}
+.account-details {
+    margin-top: 20px;
 }
 
 .image{
@@ -50,15 +51,66 @@ img{
 .balances {
     padding: 15px;
     clear: both;
-    margin: 15px;
 }
-.balances >div>span {
-    background-color: #5fcf80;
+.balances>div{
+    width: 200px;
+    height: 20px;
+    padding: 20px 10px;
+    background-color: #d8ffb7;
 }
+.text{
+    float: left;
+}
+.value{
+    float: right;
+    color: white;
+}
+.btn{
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    border: none;
+    color: gray;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:active{
+    border: 1px solid green;
+}
+#view-record-btn{
+    background-color: #d2d6ff;
+}
+#deactivate-btn{
+    background-color: #caffa7;
+}
+#delete-btn{
+    background-color: #ff7c74;
+}
+
 #name {
         font-size: 20px;
 }
-button{
-    clear: both;
+table{
+    border-spacing: 10px 15px;
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border-bottom: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #b2f370;
+}
 
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+tr{
+    cursor: pointer;
 }
