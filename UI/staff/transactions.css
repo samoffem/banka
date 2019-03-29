@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+.container{
+    width: 600px;
+    height: 650px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-top: 100px;
+    text-align: left;
+}
+.container >div {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    overflow-clip: hidden;
+}
+.cashier > div{
+    margin-bottom: 20px;
+}
+input[type="text"],
+input[type="password"] {
+    width:90%;
+    height: 40px;
+    display: block;
+}
+input:focus{
+    border: 2px solid #5fcf80;
+}
+.select-element {
+    margin-top: 20px;
+}
+button{
+    width:150px;
+    height:auto;
+    padding: 10px;
+    color: white;
+    background-color: #5fcf80;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 200px;
+    margin-top: 40px;
+
+}
+button:focus {
+    outline: none;
+}

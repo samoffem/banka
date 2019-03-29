@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 480px;
+    display: block;
+    margin-top: 20px;
+}
+ form {
+     max-width: 300px;
+     margin: auto;
+     padding: 40px 20px;
+     background: #f4f7f8;
+     border-radius: 0 0 8px 8px;
+ }
+ h1 {
+     margin: 0 0 30px 0;
+     text-align: center;
+ }
+
+ input[type="text"],
+ input[type="email"],
+ input[type="password"] {
+     border: none;
+     font-size: 16px;
+     height: auto;
+     outline: 0;
+     padding: 15px;
+     width: 100%;
+     background-color: #e8eeef;
+     color: #8a97a0;
+     box-shadow: 0 0px 0 rgba(0,0,0,0.3) inset;
+     margin-bottom: 30px;
+ }
+ input:focus {
+     box-shadow: 0 0 5px rgba(81,203,238,1);
+     border: 1px solid rgba(81,203,238,1);
+ }
+input[type="radio"] {
+    margin: 0 4px 8px 0;
+}
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+legend {
+    display: block;
+    margin-bottom: 8px;
+}
+label.light{
+    font-weight: 300;
+    display: inline;
+}
+.section {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(225, 225,225,0.2);
+    border-radius: 100%;
+}
+.tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tab-group::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: rgba(160,179,176,.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.container > div:last-child {
+    display: none;
+}
+li a:hover{
+    background: rgba(26,177,136,.8);
+    color: white;
+}
+.active a{
+    background: #1ab188;
+    color: white;
+}
+p a {
+    float: right;
+    text-decoration-line: none;
+    text-decoration-color: #66ff66;
+}
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 1px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+button:hover, button:focus {
+    background: #4bc980;
+    outline: none;
+}
+@media screen and (min-width: 480px){
+    form{
+        max-width: 480px;
+    }
+}
+
+
+
+
+
+

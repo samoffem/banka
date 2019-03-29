@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 600px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.container{
+    height: 100%;
+    margin: 40px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+.accounts-list{
+    width: 700px;
+    height: 100%;
+    border: 1px solid black;
+}
+.customer-details{
+    width: 500px;
+    border: 1px solid black;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    border: 2px solid white;
+    overflow: hidden;
+    float: left;
+    margin-left: 15px;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.details >div {
+    margin-top: 15px;
+}
+.details{
+    float: left;
+    margin-left: 30px;
+}
+.balances {
+    padding: 15px;
+    clear: both;
+    margin: 15px;
+}
+.balances >div>span {
+    background-color: #5fcf80;
+}
+#name {
+        font-size: 20px;
+}
+button{
+    clear: both;
+
+}

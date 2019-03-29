@@ -1,0 +1,120 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f7f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.container {
+    width: 600px;
+    height: auto;
+    border: 1px solid #d8ffbc;
+    margin-top: 30px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-top: 20px;
+    height: 100%;
+}
+
+.field-wrap{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+label {
+    position: absolute;
+    margin-left: 15px;
+    color: #5f8e69;
+    transform: translateY(20px);
+    transition:all 0.25s ease;
+    pointer-events: none;
+}
+label.active {
+    transform: translateY(60px);
+    color: #a0b3b0;
+    margin-left: 10px;
+}
+label.active::after{
+    content: "";
+}
+
+input {
+    padding: 15px 0;
+    background: none;
+    border: 1px solid #a0b3b0;
+    color: black;
+    width: 80%;
+    font-size: 20px;
+}
+input:focus {
+    outline: 0;
+    border-color: #4bc970;
+    box-shadow: 1px 1px 2px #4bc970;
+}
+
+.top-row > div {
+    float: left;
+}
+.top-row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.req {
+    color: #1ab188;
+}
+.nav-button {
+    padding: 10px;
+    color: #FFF;
+    background-color: #5fcf80;
+    font-size: 18px;
+    font-style: normal;
+    width: 80px;
+    border: 1px solid #72ff8b;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-button:focus{
+    border: none;
+}
+#next {
+    float: right;
+    margin-right: 55px;
+}
+#prev {
+    float: left;
+    margin-left: 55px;
+    display: none;
+}
+legend {
+    margin-bottom: 8px;
+}
+fieldset{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.next-of-kin {
+    display: none;
+    width: 100%;
+}
+.section {
+    background-color:#5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(225, 225,225,0.2);
+    border-radius: 100%;
+}
