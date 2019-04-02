@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="viewAllAccounts.css">
 </head>
 <body>
-    <div>
-        <p>List of all Account Holders. Click on a name to view details of account</p>
-    </div>
     <div class="container">
-
+        <header>
+            <p>List of all Account Holders</p>
+        </header>
         <div class="accounts-list">
             <table id="table-id">
                 <tr>
@@ -62,36 +62,43 @@
                     <td>Savings</td>
                     <td>Dormant</td>
                 </tr>
+                <tr>
+                    <td>00007</td>
+                    <td>Okon Raphael L.</td>
+                    <td>0024567454</td>
+                    <td>Savings</td>
+                    <td>Dormant</td>
+                </tr>
             </table>
         </div>
         <div class="customer-details">
             <div class="account-details">
 
-                <div class="image">
-                    <img src="../../UI/pic.jpg">
-                </div>
-                <div class="details">
-                    <div id="name"></div>
+
+                <p>User details</p>
+
+                <div class="balances">
+                    <div id="name">No user selected</div>
                     <div id="account-number"></div>
                     <div id="account-type"></div>
                     <div id="phone-number"></div>
-                    <div id="address"></div>
-                </div>
-                <div class="balances">
                     <div class="ledger-balance">
                         <div class="text">Ledger Balance:</div>
-                        <div class="value">%Balance%</div>
+                        <div class="value">0.00</div>
                     </div>
                     <div class="available-balance">
                         <div class="text">Available Balance:</div>
-                        <div class="value">%Balance%</div>
+                        <div class="value">0.00</div>
                     </div>
                 </div>
+                <div class="image">
+                    <img src="../../UI/pic.jpg">
+                </div>
+                <button class="btn" id="view-record-btn">View Records</button>
+                <button class="btn" id="deactivate-btn">Deactivate</button>
+                <button class="btn" id="delete-btn">Delete Account</button>
             </div>
 
-            <button class="btn" id="view-record-btn">View Records</button>
-            <button class="btn" id="deactivate-btn">Deactivate Account</button>
-            <button class="btn" id="delete-btn">Delete Account</button>
         </div>
 
 

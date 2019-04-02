@@ -11,3 +11,14 @@ document.querySelector('button').addEventListener('click', (e)=>{
 
     }
 })
+ let active = false
+document.querySelector('.bars').addEventListener('click',()=>{
+    active = !active;
+    if(active){
+        console.log('i clicked')
+        document.querySelector('.side-bar').style.left = '0'
+    }else {
+        document.querySelector('.side-bar').style.left = '-240px'
+    }
+
+})

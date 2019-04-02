@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 500px;
+    margin: 50px auto;
+    border: 1px solid #279c68;
+}
+select, input{
+    width: 70%;
+    display: block;
+    margin: 20px 0 10px 20px;
+    padding: 10px;
+}
+

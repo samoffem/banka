@@ -2,78 +2,94 @@
     margin: 0;
     padding: 0;
 }
+html{
+    background-color: #4bc970;
+}
 body {
-    height: 600px;
-
+    width: 960px;
+    margin: 0 auto;
 }
 
 .container{
-    height: 100%;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
+    overflow: hidden;
 }
-.accounts-list{
-    width: 45%;
-    height: 100%;
-    border: 1px solid black;
+header{
+    height: 100px;
+    background-color: #666666;
+    text-align: center;
+    color: white;
 }
-.customer-details{
-    width: 45%;
-    border: 1px solid black;
-    display: none;
-}
-.account-details {
-    margin-top: 20px;
+header>p{
+    font-size: 2em;
+    font-family: "Arial Black";
 }
 
-.image{
-    width: 200px;
-    height: 200px;
-    background-color: gray;
-    border: 2px solid white;
+.accounts-list{
+    width: 560px;
+    float: left
+}
+.customer-details{
+    background-color: #f4f7f8;
+    width: 360px;
+    padding: 10px 20px;
+    float:left;
+}
+.account-details {
     overflow: hidden;
-    float: left;
-    margin-left: 15px;
 }
-img{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
+
 .details >div {
-    margin-top: 15px;
 }
 .details{
-    float: left;
-    margin-left: 30px;
 }
 .balances {
-    padding: 15px;
-    clear: both;
+}
+.balances{
+    width: 200px;
+    float: left;
 }
 .balances>div{
-    width: 200px;
     height: 20px;
-    padding: 20px 10px;
-    background-color: #d8ffb7;
+    background-color: #b7bdbe;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.available-balance{
+
 }
 .text{
     float: left;
 }
 .value{
     float: right;
-    color: white;
+}
+.image{
+    width: 90px;
+    height: 90px;
+    background-color: gray;
+    float: left;
+    overflow: hidden;
+    border-radius: 45px;
+    margin-left: 40px;
+    border: 1px solid #b7bdbe;
+
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .btn{
-    display: block;
-    width: 300px;
-    height: 30px;
-    margin-left: 100px;
-    margin-bottom: 20px;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
     border: none;
-    color: gray;
+    color: whitesmoke;
     cursor: pointer;
+    margin:10px 0 0 30px;
+    text-align: center;
+    border-radius: 10px;
 }
 .btn:focus{
     outline: none;
@@ -82,13 +98,13 @@ img{
     border: 1px solid green;
 }
 #view-record-btn{
-    background-color: #d2d6ff;
+    background-color: #4f4f9b;
 }
 #deactivate-btn{
-    background-color: #caffa7;
+    background-color: #108815;
 }
 #delete-btn{
-    background-color: #ff7c74;
+    background-color: red;
 }
 
 #name {
@@ -105,11 +121,14 @@ th, td {
     text-align: left;
 }
 th {
-    background-color: #b2f370;
+    background-color: #b7bdbe;
 }
 
 tr:nth-child(odd) {
     background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: white;
 }
 tr{
     cursor: pointer;

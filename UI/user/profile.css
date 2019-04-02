@@ -2,84 +2,96 @@
     margin: 0;
     padding: 0;
 }
+html{
+}
 body {
     width: 100%;
+    margin: 0 auto;
 }
 .container{
     width: 100%;
-    display: flex;
-    flex-flow: column wrap;
     position: relative;
+    overflow: hidden;
 }
-nav {
+header {
     width: 100%;
-    height: 350px;
-    display: flex;
-    flex-flow: row wrap;
-    background-color: rgba(48, 47, 48, 0.8);
+    background-color: #55d6aa;
     background-size: cover;
     overflow: auto;
+    padding: 5px 0;
 }
-.text {
-    float:left;
-    font-size: 20px;
+.header-container{
+    width: 80%;
+    margin: 0 auto;
 }
-
-.value {
+.bars{
+    width: 30px;
+    background-color: #55d6aa;
+    float: left;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bars>div{
+    width:100%;
+    height: 5px;
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 2px;
+}
+nav{
     float: right;
-    letter-spacing: 1px;
-    font-size: 20px;
+    margin-top: 15px;
+}
+nav ul {
+    list-style: none;
+}
+nav>ul>li{
+    display: inline;
+    margin-left:30px;
+}
+nav a {
     color: white;
-}
-.account-details{
-    width: 300px;
-    height: 20px;
-    padding: 20px 10px;
-    margin-left: 5px;
-}
-#account-num {
-    background-color: rgba(75,201,112,0.8);
-    margin-top: 180px;
-}
-#account-status{
-    background-color: rgba(75,201,112,0.8);
-}
-#account-type {
-    background-color: rgba(128, 135, 201, 0.8);
-}
-#account-id{
-    background-color: rgba(128, 135, 201, 0.8);
-}
-#upper-right {
-    position: absolute;
-    top: 180px;
-    left: 80.5%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
-#account-bal {
-    position: absolute;
-    height: 100px;
-    width: 300px;
-    top: 15%;
-    left: 40%;
-    background-color: rgba(58,193,98,0.7);
-    padding: 5px 10px;
-    overflow: auto;
+#bar-2, #bar-3 {
+    margin-top: 5px;
 }
-.available-balance {
-    margin-top: 23%;
+.side-bar{
+    position: fixed;
+    left: -240px;
+    background-color: #3f3f3f;
+    width:240px;
+    height: 100%;
+    box-sizing: border-box;
+    transition: left ease-in-out 350ms;
+}
+.side-bar ul{
+    list-style: none;
+    margin-left: 25px;
+}
+.side-bar>ul>li{
+    margin-top: 30px;
+}
+.side-bar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: whitesmoke;
 }
 
 .image{
-    position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 30px;
+    height: 30px;
     background-color: gray;
-    border-radius: 100px;
-    border: 2px solid white;
+    border-radius: 15px;
+    border: 1px solid white;
     overflow: hidden;
-    top: 250px;
-    left: 43%;
+    float: right;
 }
 img{
     display: block;

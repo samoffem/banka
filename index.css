@@ -1,103 +1,138 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
-body {
-    background: #eee;
-}
-.bg-image{
-    width: 100%;
-    height: 800px;
-    background: url("bg.jpg") no-repeat;
-    background-size: 100% 100%;
-}
-.bw-gradient{
-    width: 100%;
-    height: 800px;
-    position: absolute;
-    /*background: linear-gradient(rgba(0,0,0,1), rgba(255,255,255,0.4));*/
-    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,0) 100%);
+body{
+    background-color: #279c68;
+    position: relative;
+
 }
 .container{
-    width: 90%;
-    height: 700px;
-    position: relative;
+    width: 80%;
     margin: 0 auto;
 }
-.logo{
-    color: white;
+h1, h2, p{
+    color: #e2e2e2;
+}
+header{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2%;
+    overflow: hidden;
+}
+header .logo{
+    float: left;
+    color: #e2e2e2;
     font-size: 30px;
-    position: absolute;
-    left: 50px;
-    padding: 20px;
-    font-family: "Century Gothic";
+}
+header>nav{
+    float: right;
+}
+header>nav>ul{
+    list-style: none;
+}
+nav>ul>li{
+    display: inline;
+    margin-left: 40px;
+}
+nav a{
+    text-decoration: none;
+    color: #e2e2e2;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.brand-quote{
+    text-align: center;
+    width: 30%;
+    position: relative;
+    left: 30%;
+    margin-top: 100px;
+    font-family: Tahoma;
+    font-weight: lighter;
     letter-spacing: 3px;
 }
-.header{
-    width: 960px;
-    padding: 20px;
-}
-nav>ul {
-    position: absolute;
-    right: 150px;
-}
-nav>ul>li {
-    list-style: none;
-    float: left;
-    height: 40px;
-    line-height: 40px;
-}
-nav>ul>li>a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0 20px 0 20px;
-}
-.btn{
-    width: 130px;
-    height: 40px;
-    background-color: #34f315;
-    font-size: 16px;
-    font-weight: bold;
-    border:none;
-    border-radius: 5px;
-    color: #ffffff;
-    position: absolute;
-    right: 0;
-}
-
-.brand-quote {
-    color: #fff;
-    font-size: 50px;
-    padding-left: 20px;
+.brand-quote2{
+    width: 20%;
+    text-align: center;
     position: relative;
-    top: 120px;
-    left:100px;
+    left: 34%;
 }
 .paragraph{
-    width: 500px;
-    color: #fff;
+    width: 60%;
     position: relative;
-    top: 150px;
-    left: 100px;
-    padding-left: 20px;
+    margin-top: 18px;
+    left: 20%;
     font-family: Tahoma;
     letter-spacing: 2px;
 }
-.discover{
-    width: 150px;
+.btn{
+    width: 35%;
     height: 30px;
-    text-align: center;
-    letter-spacing: 1px;
-    position: relative;
-    color: #FFFFFF;
-    top: 300px;
-    left:650px;
-    background-color: rgba(52,243,21,0.8);
-    border: 1px solid white;
+    background-color: white;
+    padding:0 20px;
+    color: #279c68;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
     border-radius: 5px;
-    font-size: 18px;
+    margin-left:28%;
+    margin-top: 40px;
     cursor: pointer;
+}
+.navigate{
+    margin: 12% 10% 0 0;
+    overflow: hidden;
+}
+.navigate ul{
+    width: 450px;
+    font-family: Arial, Verdana;
+    overflow: hidden;
+    font-size: 14px;
+    margin:0 auto;
+    padding: 0;
+    list-style: none;
+}
+.navigate ul li{
+    width: 150px;
+    display: block;
+    position: relative;
+    float: left;
+}
+.navigate li ul {
+    display: none;
+}
+.navigate>ul>li>a{
+    border-radius: 5px;
+}
+.navigate ul li a{
+    display: block;
+    text-decoration: none;
+    color: #279c68;
+    padding: 5px 15px;
+    background: white;
+    margin-left: 10px;
+}
+.navigate ul li a:hover{
+    background: whitesmoke;
+}
+.navigate li:hover ul {
+    display: block;
 
 }
+.navigate li:hover li {
+    float: none;
+    font-size: 11px;
+}
+.navigate li:hover a {
+    background: whitesmoke;
+}
+.navigate li:hover li a:hover {
+    background-color: #95a9b1;
+}
+
+
+
+
+
+
+
