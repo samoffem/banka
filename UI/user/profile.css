@@ -6,10 +6,13 @@ html{
 }
 body {
     width: 100%;
+    height: 100%;
+    background-color: #f4f7f8;
     margin: 0 auto;
 }
 .container{
     width: 100%;
+    height: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -83,6 +86,18 @@ nav a {
     font-size: 20px;
     color: whitesmoke;
 }
+section{
+    width: 884px;
+    height: 100vh;
+    background-color: rgba(153, 159, 160, 0.3);
+    border: 1px solid whitesmoke;
+    margin: 0 auto;
+    padding: 40px;
+}
+section>div{
+    background-color: whitesmoke;
+    height: 100%;
+}
 
 .image{
     width: 30px;
@@ -98,15 +113,13 @@ img{
     width: 100%;
     height: 100%;
 }
-#name-of-account {
-    margin: 105px 0 0 42%;
+section>div>p {
     font-size: 25px;
 }
 button{
     width: 150px;
     padding:10px;
     background-color: #4bc970;
-    margin-left: 45%;
     font-size: 15px;
     text-align: center;
     font-style: normal;
@@ -116,8 +129,6 @@ button{
     cursor: pointer;
 }
 .table{
-    margin-left: 35%;
-    margin-top: 20px;
     display: none;
 }
 table{
